@@ -1,10 +1,15 @@
-package principal.Tareas.Tarea2;
+package principal.Tareas.Tarea2.Ejercicio3;
+
+/**
+ *
+ * @author Patrick
+ */
 
 public class mainTarea2 {
 
     public static void main(String[] args) {
 
-        /*------------------ Queue/Cola ------------------*/
+        /*------------------ Queue/Cola/Ejercicio 3 ------------------*/
         cola<String> Cola = new cola<>();
 
         Cola.enqueue("Sol", 10, 1);

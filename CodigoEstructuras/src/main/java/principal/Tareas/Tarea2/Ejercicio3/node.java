@@ -1,4 +1,9 @@
-package principal.Tareas.Tarea2;
+package principal.Tareas.Tarea2.Ejercicio3;
+
+/**
+ *
+ * @author Patrick
+ */
 
 public class node <T>{
     
