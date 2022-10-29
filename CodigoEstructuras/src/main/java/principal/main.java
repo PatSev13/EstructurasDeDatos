@@ -3,6 +3,9 @@ package principal;
 import principal.TrabajoEnClase.Semana2.Recursion;
 import principal.TrabajoEnClase.Semana3.stack;
 import principal.TrabajoEnClase.Semana4.queue;
+import principal.TrabajoEnClase.Semana7.Persona;
+import principal.TrabajoEnClase.Semana7.list;
+import principal.TrabajoEnClase.Semana7.listaCircular;
 
 public class main {
 
@@ -39,7 +42,7 @@ public class main {
         System.out.println(Cola.dequeue());
         System.out.println(Cola.dequeue().getValue());*/
         
-        queue <Integer> Cola2 = new queue<>();
+        /*queue <Integer> Cola2 = new queue<>();
         for (int i = 0; i <= 100; i++) {
             Cola2.enqueue(i);
         }
@@ -55,7 +58,30 @@ public class main {
             Cola3.enqueue(i);
         }
         
-        System.out.println(Cola3.findByIndex(0).getValue());
+        System.out.println(Cola3.findByIndex(0).getValue());*/
+        
+        /*------------------ Listas ------------------*/
+        /*------- ListaC simple -------*/
+        /*list ListaC = new list();
+        ListaC.insertar(new Persona(1, "P"));
+        ListaC.insertar(new Persona(2, "P"));
+        ListaC.insertar(new Persona(3, "P"));
+        ListaC.insertar(new Persona(5, "P"));
+        ListaC.insertar(new Persona(4, "P"));
+        ListaC.eliminarPersona(7);
+        ListaC.eliminarPersona(3);
+        ListaC.eliminarPersona(3);
+        ListaC.imprimirLista();*/
+        
+        /*------- ListaC circular -------*/
+        
+        listaCircular ListaC = new listaCircular();
+        ListaC.insertar(new Persona(1, "P"));
+        ListaC.insertar(new Persona(2, "P"));
+        ListaC.insertar(new Persona(3, "P"));
+        ListaC.insertar(new Persona(5, "P"));
+        ListaC.insertar(new Persona(4, "P"));
+        ListaC.imprimirLista();
         
     }
 }
