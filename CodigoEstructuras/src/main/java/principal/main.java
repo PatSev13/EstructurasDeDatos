@@ -6,6 +6,7 @@ import principal.TrabajoEnClase.Semana4.queue;
 import principal.TrabajoEnClase.Semana7.Persona;
 import principal.TrabajoEnClase.Semana7.list;
 import principal.TrabajoEnClase.Semana7.listaCircular;
+import principal.TrabajoEnClase.Semana9.listaDobleCircular;
 
 public class main {
 
@@ -61,27 +62,52 @@ public class main {
         System.out.println(Cola3.findByIndex(0).getValue());*/
         
         /*------------------ Listas ------------------*/
-        /*------- ListaC simple -------*/
-        /*list ListaC = new list();
-        ListaC.insertar(new Persona(1, "P"));
-        ListaC.insertar(new Persona(2, "P"));
-        ListaC.insertar(new Persona(3, "P"));
-        ListaC.insertar(new Persona(5, "P"));
-        ListaC.insertar(new Persona(4, "P"));
-        ListaC.eliminarPersona(7);
-        ListaC.eliminarPersona(3);
-        ListaC.eliminarPersona(3);
-        ListaC.imprimirLista();*/
+        /*------- Lista simple -------*/
+        /*list listaS = new list();
+        listaS.insertar(new Persona(1, "P"));
+        listaS.insertar(new Persona(2, "P"));
+        listaS.insertar(new Persona(3, "P"));
+        listaS.insertar(new Persona(5, "P"));
+        listaS.insertar(new Persona(4, "P"));
+        listaS.eliminarPersona(7);
+        listaS.eliminarPersona(3);
+        listaS.eliminarPersona(3);
+        listaS.imprimirLista();*/
         
-        /*------- ListaC circular -------*/
+        /*------- Lista circular -------*/
+        /*listaCircular listaC = new listaCircular();
+        listaC.insertar(new Persona(1, "P"));
+        listaC.insertar(new Persona(2, "P"));
+        listaC.insertar(new Persona(3, "P"));
+        listaC.insertar(new Persona(5, "P"));
+        listaC.insertar(new Persona(4, "P"));
+        listaC.imprimirLista();*/
         
-        listaCircular ListaC = new listaCircular();
-        ListaC.insertar(new Persona(1, "P"));
-        ListaC.insertar(new Persona(2, "P"));
-        ListaC.insertar(new Persona(3, "P"));
-        ListaC.insertar(new Persona(5, "P"));
-        ListaC.insertar(new Persona(4, "P"));
-        ListaC.imprimirLista();
+        /*------- Lista Doble Circular -------*/
+        listaDobleCircular listaDC = new listaDobleCircular();
+        listaDC.insertar(new Persona(1, "P"));
+        listaDC.insertar(new Persona(5, "P"));
+        listaDC.insertar(new Persona(3, "P"));
+        listaDC.insertar(new Persona(4, "P"));
+        listaDC.insertar(new Persona(2, "P"));
+        listaDC.imprimirLista();
+        
+        /*listaDC.existe(5);
+        listaDC.existe(6);
+        listaDC.existe(1);
+        
+        listaDC.modifica(new Persona(4, "B"));
+        listaDC.modifica(new Persona(1, "B"));
+        listaDC.modifica(new Persona(6, "B"));
+        listaDC.imprimirLista();*/
+        
+        /*listaDC.elimina(3);
+        System.out.println("\n");
+        listaDC.imprimirLista();*/
+        
+        System.out.println("\n");
+        System.out.println( "Valor extraído: " + listaDC.extrae(3));
+        listaDC.imprimirLista();
         
     }
 }

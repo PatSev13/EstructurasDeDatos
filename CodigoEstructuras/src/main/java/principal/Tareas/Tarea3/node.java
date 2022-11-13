@@ -1,17 +1,19 @@
-package principal.TrabajoEnClase.Semana3;
+package principal.Tareas.Tarea3;
 
+/**
+ *
+ * @author Patrick
+ */
+public class node<T> {
 
-public class node <T>{
-    
     private T value;
     private node<T> next;
-    private node<T> back;
-    
-    public node(){
-        
+
+    public node() {
+
     }
-    
-    public node(T value){
+
+    public node(T value) {
         this.value = value;
     }
 
@@ -30,13 +32,4 @@ public class node <T>{
     public void setNext(node<T> next) {
         this.next = next;
     }
-
-    public node<T> getBack() {
-        return back;
-    }
-
-    public void setBack(node<T> back) {
-        this.back = back;
-    }
-       
 }
