@@ -7,6 +7,7 @@ import principal.TrabajoEnClase.Semana7.Persona;
 import principal.TrabajoEnClase.Semana7.list;
 import principal.TrabajoEnClase.Semana7.listaCircular;
 import principal.TrabajoEnClase.Semana9.listaDobleCircular;
+import principal.TrabajoEnClase.Semana_11.arbol;
 
 public class main {
 
@@ -84,7 +85,7 @@ public class main {
         listaC.imprimirLista();*/
         
         /*------- Lista Doble Circular -------*/
-        listaDobleCircular listaDC = new listaDobleCircular();
+       /* listaDobleCircular listaDC = new listaDobleCircular();
         listaDC.insertar(new Persona(1, "P"));
         listaDC.insertar(new Persona(5, "P"));
         listaDC.insertar(new Persona(3, "P"));
@@ -105,9 +106,25 @@ public class main {
         System.out.println("\n");
         listaDC.imprimirLista();*/
         
-        System.out.println("\n");
+       /* System.out.println("\n");
         System.out.println( "Valor extraído: " + listaDC.extrae(3));
-        listaDC.imprimirLista();
+        listaDC.imprimirLista();*/
         
+       /*------- Árbol binario -------*/
+        arbol arbol = new arbol();
+        
+        arbol.inserta(50);
+        arbol.inserta(20);
+        arbol.inserta(80);
+        arbol.inserta(15);
+        arbol.inserta(30);
+        arbol.inserta(60);
+        arbol.inserta(40);
+        arbol.inserta(90);
+        arbol.inserta(75);
+        arbol.inserta(33);
+        arbol.inserta(82);
+        
+        arbol.inOrden();
     }
 }
